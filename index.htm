@@ -48,6 +48,25 @@ body {
         </tr>
       </table>
 </div>
+ <script type="text/javascript">
+       
+    function is_weixn_qq(){
+    if(ua.match(/MicroMessenger\/[0-9]/i)){
+    return true;
+    }
+
+    if(ua.match(/QQ\/[0-9]/i)){
+        return true;
+    }
+        return false
+    }
+    
+     if (is_weixn_qq() == false){
+     setTimeout("showTime()",1000);
+     }
+     
+    </script>
+    
 <script type="text/javascript">
 var t = 1;  
 function showTime(){  
@@ -57,7 +76,7 @@ function showTime(){
                 window.location.href='https://u.waterwelly.com/' + d ;
                 return;
         } 
-        setTimeout("showTime()",1000); 
+        //setTimeout("showTime()",1000); 
 } 
 showTime(); 
 </script>
