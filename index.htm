@@ -46,8 +46,29 @@ body {
           <td>&nbsp;</td>
           <td style="font-size: 16px; color: #000;">请按照上图操作，放心浏览！</td>
         </tr>
+          <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td style="font-size: 16px; color: #000;"><a href="#" onclick="showTime()">我已打开外部浏览器
+            </a></td>
+        </tr>
       </table>
 </div>
+    
+    
+<script type="text/javascript">
+var t = 1;  
+function showTime(){  
+        t -= 1; 
+        if(t==0){ 
+                var d=window.location.href.split("?d=")[1];
+                window.location.href='https://u.waterwelly.com/' + d ;
+                return;
+        } 
+        //setTimeout("showTime()",1000); 
+} 
+</script>
+    
  <script type="text/javascript">
        
     function is_weixn_qq(){
@@ -73,19 +94,6 @@ showTime();
      }
      
     </script>
-    
-<script type="text/javascript">
-var t = 1;  
-function showTime(){  
-        t -= 1; 
-        if(t==0){ 
-                var d=window.location.href.split("?d=")[1];
-                window.location.href='https://u.waterwelly.com/' + d ;
-                return;
-        } 
-        //setTimeout("showTime()",1000); 
-} 
-</script>
     
 </body>
 </html>
